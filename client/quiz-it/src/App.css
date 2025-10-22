@@ -1,0 +1,57 @@
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.question-container {
+  border: 2px solid #007bff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 כפתורים בשורה */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-button {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 16px;
+}
+
+.option-button:hover {
+  background-color: #e2e6ea;
+}
+
+.quiz-results {
+    padding: 30px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.score-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}

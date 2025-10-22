@@ -1,4 +1,4 @@
-/* 🎯 עיצוב כללי */
+/* General*/
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-/* 🧩 כותרת */
+/* Header*/
 header h1 {
   font-size: 3rem;
   color: #2c3e50;
@@ -27,7 +27,7 @@ header p {
   margin-bottom: 40px;
 }
 
-/* 🧾 תיבת הזנת טקסט */
+/* Input text*/
 form {
   background-color: #fff;
   padding: 25px;
@@ -52,7 +52,7 @@ textarea:focus {
   outline: none;
 }
 
-/* 🔘 כפתור יצירת מבחן */
+/* Create quiz btn */
 button[type="submit"],
 button.option-button,
 button.restart-button {
@@ -81,7 +81,7 @@ button[type="submit"]:disabled {
   cursor: not-allowed;
 }
 
-/* ❓ קונטיינר לשאלה */
+/* container */
 .question-container {
   background-color: #fff;
   border: 2px solid #007bff;
@@ -92,7 +92,7 @@ button[type="submit"]:disabled {
   text-align: left;
 }
 
-/* 🧮 תצוגת ניקוד ושאלה */
+/* Score */
 .score-display {
   font-weight: 600;
   color: #007bff;
@@ -111,7 +111,7 @@ button[type="submit"]:disabled {
   margin-bottom: 25px;
 }
 
-/* ✅ אפשרויות תשובה */
+/* Answers */
 .options-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -132,7 +132,7 @@ button[type="submit"]:disabled {
   transform: scale(0.98);
 }
 
-/* 🏁 מסך תוצאות */
+/* Results */
 .quiz-results {
   padding: 30px;
   background-color: #f1f3f5;
@@ -153,7 +153,7 @@ button[type="submit"]:disabled {
   margin-bottom: 25px;
 }
 
-/* 🔁 כפתור התחלה מחדש */
+/* Restart */
 button.restart-button {
   background-color: #6c63ff;
   color: white;
@@ -163,7 +163,7 @@ button.restart-button:hover {
   background-color: #584dd0;
 }
 
-/* ⚠️ הודעות שגיאה */
+/* Error */
 .error-box {
   background-color: #fdecea;
   color: #b30000;
@@ -173,7 +173,7 @@ button.restart-button:hover {
   margin-bottom: 20px;
 }
 
-/* ⏳ טעינה */
+/* Loading */
 .loading {
   color: #007bff;
   font-size: 1.2rem;

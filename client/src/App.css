@@ -1,57 +1,181 @@
+/* 🎯 עיצוב כללי */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f8fa;
+  color: #333;
+}
 
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   max-width: 800px;
   margin: 0 auto;
-  font-family: sans-serif;
+}
+
+/* 🧩 כותרת */
+header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+/* 🧾 תיבת הזנת טקסט */
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  border-radius: 5px;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.3s;
 }
 
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 🔘 כפתור יצירת מבחן */
+button[type="submit"],
+button.option-button,
+button.restart-button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.25s, transform 0.1s;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="submit"]:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* ❓ קונטיינר לשאלה */
 .question-container {
+  background-color: #fff;
   border: 2px solid #007bff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
   margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
 }
 
+/* 🧮 תצוגת ניקוד ושאלה */
+.score-display {
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.question-number {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.question-text {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* ✅ אפשרויות תשובה */
 .options-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 כפתורים בשורה */
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin-top: 20px;
 }
 
 .option-button {
   background-color: #f8f9fa;
   color: #333;
-  padding: 10px 15px;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 16px;
 }
 
 .option-button:hover {
-  background-color: #e2e6ea;
+  background-color: #e9ecef;
 }
 
+.option-button:active {
+  transform: scale(0.98);
+}
+
+/* 🏁 מסך תוצאות */
 .quiz-results {
-    padding: 30px;
-    background-color: #e9ecef;
-    border-radius: 10px;
+  padding: 30px;
+  background-color: #f1f3f5;
+  border-radius: 10px;
+  border: 2px solid #6c63ff;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.score-display {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #007bff;
+.quiz-results h2 {
+  font-size: 2rem;
+  color: #6c63ff;
+  margin-bottom: 15px;
+}
+
+.quiz-results p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+/* 🔁 כפתור התחלה מחדש */
+button.restart-button {
+  background-color: #6c63ff;
+  color: white;
+}
+
+button.restart-button:hover {
+  background-color: #584dd0;
+}
+
+/* ⚠️ הודעות שגיאה */
+.error-box {
+  background-color: #fdecea;
+  color: #b30000;
+  border: 1px solid #f5c6cb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ⏳ טעינה */
+.loading {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
